@@ -1,5 +1,7 @@
 # mcp-server-qa
 
+> **Moved.** This project now lives in [support-casebook/suites/mcp-server-qa](https://github.com/su0xpj-bastion/support-casebook/tree/main/suites/mcp-server-qa), where it is maintained and tested. This repository is archived and read-only.
+
 A real **MCP server** in TypeScript (`incident-desk`: search, read, ticket, close and export incidents for on-call work) and the QA suite that proves it is safe to hand to an agent. The suite drives the server through the **official MCP TypeScript client** over **both transports** (stdio and Streamable HTTP) and covers protocol conformance, input validation, property-based fuzzing, auth, pagination, progress and cancellation, secret redaction, path traversal, tool-description poisoning, tool annotations, isolation under concurrency, and schema drift against a committed baseline. Twelve deliberate server bugs prove each check works.
 
 ```bash
